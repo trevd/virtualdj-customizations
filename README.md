@@ -5,6 +5,8 @@ Index:
 
   Mappers\Akai APC Mini - Beatjumps.xml 
           - A Custom Map for the Akai APC Mini Controller. This map has all Beatjumps from 1 Beat to 32 Bars. Stem control. Low/Mid/Hi Kill Buttons. and more.
+
+
   Mappers\Pioneer DDJ-SB2 - 2021.xml
           - A Custom Map for the DDJ-SB2. The Right Trim knob on my controller no longer works so this maps the gain control onto the filter knobs and does some other tricks.
         
