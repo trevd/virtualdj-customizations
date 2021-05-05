@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page name="EDM HOTCUES">
+	<pad4 name="Set End Cues">delete_cue 5 &amp;&amp; delete_cue 6 &amp;&amp; delete_cue 7 &amp;&amp; delete_cue 8 &amp;&amp; goto -64 &amp;&amp; hot_cue 8 &amp;&amp; goto -64 &amp;&amp;  hot_cue 7 &amp;&amp; goto -64 &amp;&amp;  hot_cue 6 &amp;&amp; goto -64 &amp;&amp;  hot_cue 5 &amp;&amp; goto_cue 1</pad4>
+	<pad1 name="Get First Beat">goto_first_beat &amp; zoom 0.01</pad1>
+	<pad5 name="-1ms">seek  -0.5ms</pad5>
+	<pad2 name="Set Cues">delete_cue 1 &amp;&amp; delete_cue 2 &amp;&amp; delete_cue 3 &amp;&amp; delete_cue 4 &amp;&amp; set_firstbeat &amp;&amp; goto 0 &amp;&amp;  hot_cue 1 &amp;&amp; goto +64 &amp;&amp;  hot_cue 2 &amp;&amp; goto +64 &amp;&amp;  hot_cue 3 &amp;&amp; goto +64 &amp;&amp;  hot_cue 4 &amp;&amp; goto_cue 1</pad2>
+	<pad6 name="+1ms">seek  +1ms</pad6>
+	<pad3 name="Goto End">goto 100%  &amp;&amp; zoom 0.25</pad3>
+	<pad7 name="End Fade">goto_mixpoint &apos;EndFade&apos;</pad7>
+	<pad8 name="End Cut">goto_mixpoint &apos;EndCut&apos;</pad8>
+	<shift_pad4 />
+	<shift_pad3 />
+	<shift_pad1 name="`pad 5`">pad 5</shift_pad1>
+	<shift_pad2 name="`pad 6`">pad 6</shift_pad2>
+	<param1 />
+	<pad11 />
+	<shift_pad7 name="End Sound">goto_mixpoint &apos;EndSound&apos;</shift_pad7>
+	<shift_pad8 name="End Tempo">goto_mixpoint &apos;EndTempo&apos;</shift_pad8>
+</page>

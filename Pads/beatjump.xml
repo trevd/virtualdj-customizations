@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page name="beatjump">
+	<pad1 name="`beatjump_pad 5`" color="beatjump_pad 1 &apos;color&apos;">beatjump_pad 5</pad1>
+	<pad2 name="`beatjump_pad 6`" color="beatjump_pad 2 &apos;color&apos;">beatjump_pad 6</pad2>
+	<pad3 name="`beatjump_pad 3`" color="beatjump_pad 3 &apos;color&apos;">beatjump_pad 3</pad3>
+	<pad4 name="`beatjump_pad 4`" color="beatjump_pad 4 &apos;color&apos;">beatjump_pad 4</pad4>
+	<pad5 />
+	<pad6 />
+	<pad7 autodim="false" />
+	<pad8 />
+	<param1 name="`beatjump_page`">beatjump_page</param1>
+	<shift_pad1 name="`beatjump_pad 1`" color="beatjump_pad 5 &apos;color&apos;">beatjump_pad 1</shift_pad1>
+	<shift_pad2 name="`beatjump_pad 2`" color="beatjump_pad 6 &apos;color&apos;">beatjump_pad 2</shift_pad2>
+	<shift_pad3 name="`beatjump_pad 7`" color="beatjump_pad 7 &apos;color&apos;">beatjump_pad 7</shift_pad3>
+	<shift_pad4 name="`beatjump_pad 8`" color="beatjump_pad 8 &apos;color&apos;">beatjump_pad 8</shift_pad4>
+	<shift_pad8 />
+	<shift_pad5 />
+	<menu />
+	<param2 />
+	<pad16 />
+	<pad15 />
+</page>
