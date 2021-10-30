@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mapper device="APCMINI" author="Atomix Productions" version="850" date="2021-08-11">
+<mapper device="APCMINI" author="Atomix Productions" version="850" date="2021-10-30">
 	<info>http://virtualdj.com/manuals/hardware/akai/apcmini.html</info>
 	<map value="SHIFT" action="shift " />
 	<map value="ROW1_PAD2" action="deck 1 beatjump +1" />
@@ -125,19 +125,18 @@
 	<map value="SLIDER1" action="deck 1 stem &quot;Rhythm&quot;" />
 	<map value="SLIDER2" action="deck 1 stem &quot;Bass&quot;" />
 	<map value="SLIDER3" action="deck 1 stem &quot;Instru&quot;" />
-	<map value="SLIDER4" action="deck 1 stem &quot;Vocal&quot;" />
+	<map value="SLIDER4" action="param_multiply 12 &amp; param_cast &quot;int_trunc&quot;  &amp; param_equal 0 ? deck 1 loop_select  0.03125 : param_equal 1 ?  deck 1 loop_select 0.0625 : param_equal 2 ? deck 1 loop_select 0.125 : param_equal 3 ? deck 1 loop_select 0.25 : param_equal 4 ? deck 1 loop_select 0.5 : param_equal 5 ? deck 1 loop_select 1 : param_equal 6 ? deck 1 loop_select 2 : param_equal 7 ? deck 1 loop_select 4 : param_equal 8 ? deck 1 loop_select 8 : param_equal 9 ? deck 1 loop_select 16 : param_equal 10 ? deck 1 loop_select 32 : param_equal 11 ? deck 1 loop_select 64 : param_equal 12 ? deck 1 loop_select 128 " />
 	<map value="SLIDER5" action="deck 2 stem &quot;Rhythm&quot;" />
 	<map value="SLIDER6" action="deck 2 stem &quot;Bass&quot;" />
 	<map value="SLIDER7" action="deck 2 stem &quot;Instru&quot;" />
-	<map value="SLIDER8" action="deck 2 stem &quot;Vocal&quot;" />
 	<map value="LEFT" action="deck 1 eq_high 0 ? deck 1 eq_high 0.5  : deck 1 eq_high 0 " />
-	<map value="RIGHT" action="nothing" />
+	<map value="RIGHT" action="deck 1 loop" />
 	<map value="DOWN" action="deck 1 eq_mid 0 ? deck 1 eq_mid 0.5 : deck 1 eq_mid 0 " />
 	<map value="LED_STOP_ALL_CLIPS" action="sampler_used" />
 	<map value="ROW1_PAD1" action="deck 1 beatjump -1" />
 	<map value="LED_LEFT" action="deck 1 eq_high 0 ? false : true" />
 	<map value="LED_ROW1_PAD1" action="color &apos;red&apos;" />
-	<map value="LED_RIGHT" action="false" />
+	<map value="LED_RIGHT" action="deck 1 loop" />
 	<map value="UP" action="deck 1 eq_low 0 ? deck 1 eq_low 0.5 &amp;&amp; deck 1 stem &apos;Bass&apos; 0.5  : deck 1 eq_low 0 &amp;&amp; deck 1 stem &apos;Bass&apos; 0" />
 	<map value="LED_UP" action="deck 1 eq_low 0 ? false : true" />
 	<map value="LED_DOWN" action="deck 1 eq_mid 0 ? false : true" />
@@ -145,7 +144,6 @@
 	<map value="VOLUME" action="deck 2 eq_low 0 ? deck 2 eq_low 0.5 &amp;&amp; deck 2 stem &apos;Bass&apos; 0.5  : deck 2 eq_low 0 &amp;&amp; deck 2 stem &apos;Bass&apos; 0 " />
 	<map value="PAN" action="deck 2 eq_mid 0 ? deck 2 eq_mid 0.5 : deck 2 eq_mid 0" />
 	<map value="SEND" action="deck 2 eq_high 0 ? deck 2 eq_high 0.5 &amp;&amp; set &apos;$decktwokill&apos; 0 : deck 2 eq_high 0" />
-	<map value="DEVICE" action="deck 2 mute_stem &quot;Vocal&quot;" />
 	<map value="SHIFT_DOWN" action="deck 1 only_stem &quot;Bass&quot;" />
 	<map value="SHIFT_LED_UP" action="blink" />
 	<map value="ROW6_PAD1" action="toggle &apos;$deckonekill&apos;  &amp;&amp; param_add &quot;get_var &apos;$decktwokill&apos;&quot; &quot;get_var &apos;$deckonekill&apos;&quot;  &amp; set &apos;$canswitch&apos; &amp;&amp; var_equal &apos;$deckonekill&apos; 1 ? deck 1 eq_high 0 &amp;&amp; deck 1 eq_low 0 &amp;&amp; deck 1 stem &apos;Bass&apos; 0 : deck 1 eq_high 0.5 &amp;&amp; deck 1 eq_low 0.5 &amp;&amp; deck 1 stem &apos;Bass&apos; 0.5" />
@@ -177,4 +175,7 @@
 	<map value="SLIDER9" action="zoom " />
 	<map value="ROW6_PAD6" action="browsed_file_info" />
 	<map value="ROW6_PAD8" action="songpos_remain" />
+	<map value="SLIDER8" action="param_multiply 12 &amp; param_cast &quot;int_trunc&quot;  &amp; param_equal 0 ? deck 2 loop_select  0.03125 : param_equal 1 ?  deck 2 loop_select 0.0625 : param_equal 2 ? deck 2 loop_select 0.125 : param_equal 3 ? deck 2 loop_select 0.25 : param_equal 4 ? deck 2 loop_select 0.5 : param_equal 5 ? deck 2 loop_select 1 : param_equal 6 ? deck 2 loop_select 2 : param_equal 7 ? deck 2 loop_select 4 : param_equal 8 ? deck 2 loop_select 8 : param_equal 9 ? deck 2 loop_select 16 : param_equal 10 ? deck 2 loop_select 32 : param_equal 11 ? deck 2 loop_select 64 : param_equal 12 ? deck 2 loop_select 128 " />
+	<map value="LED_DEVICE" action="deck 2 loop" />
+	<map value="DEVICE" action="deck 2 loop" />
 </mapper>
