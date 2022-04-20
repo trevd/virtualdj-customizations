@@ -21,6 +21,7 @@ Index:
           
           
           
-          
+Labels - The label the APC Mini Pads I used Evergreen Goods Inkjet Printable A4 Quality Glossy Transparent Self Adhesive Vinyl Labels https://www.amazon.co.uk/Transparent-Adhesive-Printable-Waterproof-Stickers/dp/B07GDR73JN and a Google Docs file with the text. 
+I then Manually cut them out with a bladed article and a ruler.
           
       
