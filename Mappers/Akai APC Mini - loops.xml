@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper device="APCMINI" author="Atomix Productions" version="850" date="2022-04-20">
+	<info>http://virtualdj.com/manuals/hardware/akai/apcmini.html</info>
+	<map value="SHIFT" action="shift ? toggle &apos;%shifton&apos;" />
+	<map value="ROW1_PAD2" action="loop 0.0625" />
+	<map value="ROW1_PAD5" action="loop 0.5" />
+	<map value="ROW1_PAD6" action="loop 1" />
+	<map value="ROW1_PAD7" action="loop 2" />
+	<map value="LED_ROW1_PAD2" action="loop_back &apos;on&apos; ? loop 0.0625 ? blink 1000ms &amp;&amp; color &apos;green&apos; : color &apos;green&apos; : loop 0.0625 ? blink 1000ms &amp;&amp; color &apos;yellow&apos; : color &apos;yellow&apos;" />
+	<map value="LED_ROW1_PAD3" action="loop_back &apos;on&apos; ? loop 0.125 ? blink 1000ms &amp;&amp; color &apos;green&apos; : color &apos;green&apos; : loop 0.125 ? blink 1000ms &amp;&amp; color &apos;yellow&apos; : color &apos;yellow&apos;" />
+	<map value="LED_ROW1_PAD4" action="loop_back &apos;on&apos; ? loop 0.25 ? blink 1000ms &amp;&amp; color &apos;green&apos; : color &apos;green&apos; : loop 0.25 ? blink 1000ms &amp;&amp; color &apos;yellow&apos; : color &apos;yellow&apos;" />
+	<map value="LED_ROW1_PAD5" action="loop_back &apos;on&apos; ? loop 0.5 ? blink 1000ms &amp;&amp; color &apos;green&apos; : color &apos;green&apos; : loop 0.5 ? blink 1000ms &amp;&amp; color &apos;yellow&apos; : color &apos;yellow&apos;" />
+	<map value="LED_ROW1_PAD6" action="loop_back &apos;on&apos; ? loop 1 ? blink 1000ms &amp;&amp; color &apos;green&apos; : color &apos;green&apos; : loop 1 ? blink 1000ms &amp;&amp; color &apos;yellow&apos; : color &apos;yellow&apos;" />
+	<map value="LED_ROW1_PAD7" action="loop_back &apos;on&apos; ? loop 2 ? blink 1000ms &amp;&amp; color &apos;green&apos; : color &apos;green&apos; : loop 2 ? blink 1000ms &amp;&amp; color &apos;yellow&apos; : color &apos;yellow&apos;" />
+	<map value="LED_ROW1_PAD8" action="loop_back &apos;on&apos; ? loop 4 ? blink 1000ms &amp;&amp; color &apos;green&apos; : color &apos;green&apos; : loop 4 ? blink 1000ms &amp;&amp; color &apos;yellow&apos; : color &apos;yellow&apos;" />
+	<map value="ROW2_PAD1" action="loop 8" />
+	<map value="ROW2_PAD2" action="loop 16" />
+	<map value="ROW2_PAD4" action="loop 64" />
+	<map value="ROW2_PAD6" action="loop_out" />
+	<map value="LED_ROW2_PAD1" action="loop_back &apos;on&apos; ? loop 8 ? blink 1000ms &amp;&amp; color &apos;green&apos; : color &apos;green&apos; : loop 8 ? blink 1000ms &amp;&amp; color &apos;yellow&apos; : color &apos;yellow&apos;" />
+	<map value="LED_ROW2_PAD2" action="loop_back &apos;on&apos; ? loop 16 ? blink 1000ms &amp;&amp; color &apos;green&apos; : color &apos;green&apos; : loop 16 ? blink 1000ms &amp;&amp; color &apos;yellow&apos; : color &apos;yellow&apos;" />
+	<map value="LED_ROW2_PAD3" action="loop_back &apos;on&apos; ? loop 32 ? blink 1000ms &amp;&amp; color &apos;green&apos; : color &apos;green&apos; : loop 32 ? blink 1000ms &amp;&amp; color &apos;yellow&apos; : color &apos;yellow&apos;" />
+	<map value="LED_ROW2_PAD5" action="loop_in ? color &apos;red&apos; &amp;&amp; blink 1000ms : color &apos;red&apos;" />
+	<map value="LED_ROW2_PAD6" action="sampler_rec 14 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 14 ? sampler_mute 14 ? color &apos;red&apos; : sampler_pad 14 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW2_PAD7" action="loop ? color &apos;red&apos; : false" />
+	<map value="LED_ROW2_PAD8" action="loop ? color &apos;red&apos; : false" />
+	<map value="ROW3_PAD1" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move -0.25 : beatjump -0.25 : beatjump -0.25" />
+	<map value="ROW3_PAD2" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move +0.25 : beatjump +0.25 : beatjump +0.25" />
+	<map value="ROW3_PAD3" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move -0.5  : beatjump -0.5 : beatjump -0.5" />
+	<map value="ROW3_PAD4" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move +0.5 : beatjump +0.5 : beatjump +0.5" />
+	<map value="ROW3_PAD5" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move -1 : beatjump -1 : beatjump -1" />
+	<map value="ROW3_PAD6" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move +1  : beatjump +1 : beatjump +1" />
+	<map value="ROW3_PAD7" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move -2 : beatjump -2 : beatjump -2" />
+	<map value="ROW3_PAD8" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move +2  : beatjump +2 : beatjump +2" />
+	<map value="LED_ROW3_PAD1" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW3_PAD2" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW3_PAD3" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW3_PAD4" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW3_PAD5" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW3_PAD6" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW3_PAD7" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW3_PAD8" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="ROW4_PAD2" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move +4 : beatjump +4 : beatjump +4" />
+	<map value="ROW4_PAD3" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move -8 : beatjump -8 : beatjump -8" />
+	<map value="ROW4_PAD4" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move +8 : beatjump +8: beatjump +8" />
+	<map value="ROW4_PAD5" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move -16 : beatjump -16 : beatjump -16" />
+	<map value="ROW4_PAD6" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move +16 : beatjump +16 : beatjump +16" />
+	<map value="ROW4_PAD8" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move +32 : beatjump +32 : beatjump +32" />
+	<map value="LED_ROW4_PAD1" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW4_PAD2" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW4_PAD3" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW4_PAD4" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW4_PAD5" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW4_PAD6" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW4_PAD7" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW4_PAD8" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="ROW5_PAD3" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move -128 : beatjump -128 : beatjump -128" />
+	<map value="ROW5_PAD5" action="set &apos;%seeking1&apos; 1 while_pressed &amp; seek 0ms &amp;&amp; holding ? seek -0.1ms : seek 0ms &amp; goto_mixpoint &quot;StartSound&quot; &amp; zoom 0.01" />
+	<map value="ROW5_PAD6" action="set &apos;%seeking2&apos; 1 while_pressed &amp; seek 0ms &amp;&amp; holding ? seek +0.1ms : seek 0ms &amp;&amp; delete_cue 1 &amp;&amp; delete_cue 2 &amp;&amp; delete_cue 3 &amp;&amp; delete_cue 4 &amp;&amp; set_firstbeat &amp;&amp; goto 0 &amp;&amp;  hot_cue 1 &amp;&amp; goto +64 &amp;&amp;  hot_cue 2 &amp;&amp; goto +64 &amp;&amp;  hot_cue 3 &amp;&amp; goto +64 &amp;&amp;  hot_cue 4 &amp;&amp; goto_cue 1" />
+	<map value="ROW5_PAD7" action="set &apos;%seeking3&apos; 1 while_pressed &amp; seek 0ms &amp;&amp; holding ? seek -1ms : seek 0ms &amp; goto 100%  &amp;&amp; zoom 0.25" />
+	<map value="ROW5_PAD8" action="set &apos;%seeking4&apos; 1 while_pressed &amp; seek 0ms &amp;&amp; holding ? seek +1ms : seek 0ms &amp; delete_cue 5 &amp;&amp; delete_cue 6 &amp;&amp; delete_cue 7 &amp;&amp; delete_cue 8 &amp;&amp; goto -64 &amp;&amp; hot_cue 8 &amp;&amp; goto -64 &amp;&amp;  hot_cue 7 &amp;&amp; goto -64 &amp;&amp;  hot_cue 6 &amp;&amp; goto -64 &amp;&amp;  hot_cue 5 &amp;&amp; goto_cue 1" />
+	<map value="LED_ROW5_PAD1" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW5_PAD2" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW5_PAD3" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW5_PAD4" action="loop ? var_equal &apos;%moveloop&apos; 1 ? blink 1000ms &amp;&amp; color &apos;red&apos; : color &apos;red&apos; : color &apos;red&apos;" />
+	<map value="LED_ROW5_PAD5" action="var_equal &apos;%seeking1&apos; 1 ? blink 1000ms &amp;&amp; color &apos;green&apos; : color &apos;green&apos;" />
+	<map value="LED_ROW5_PAD6" action="var_equal &apos;%seeking2&apos; 1 ? blink 1000ms &amp;&amp; color &apos;green&apos; : color &apos;green&apos;" />
+	<map value="LED_ROW5_PAD7" action="var_equal &apos;%seeking3&apos; 1 ? blink 1000ms &amp;&amp; color &apos;green&apos; : color &apos;green&apos;" />
+	<map value="LED_ROW5_PAD8" action="var_equal &apos;%seeking4&apos; 1 ? blink 1000ms &amp;&amp; color &apos;green&apos; : color &apos;green&apos;" />
+	<map value="ROW6_PAD1" action="leftdeck ? toggle &apos;$deckonekill&apos;  &amp;&amp; param_add &quot;get_var &apos;$decktwokill&apos;&quot; &quot;get_var &apos;$deckonekill&apos;&quot;  &amp; set &apos;$canswitch&apos; &amp;&amp; var_equal &apos;$deckonekill&apos; 1 ? eq_high 0 &amp;&amp; eq_low 0 &amp;&amp; stem &apos;Bass&apos; 0 : eq_high 0.5 &amp;&amp; eq_low 0.5 &amp;&amp; stem &apos;Bass&apos; 0.5 : toggle &apos;$decktwokill&apos;  &amp;&amp; param_add &quot;get_var &apos;$decktwokill&apos;&quot; &quot;get_var &apos;$deckonekill&apos;&quot; &amp; set &apos;$canswitch&apos; &amp;&amp; var_equal &apos;$decktwokill&apos; 1 ? eq_high 0 &amp;&amp; eq_low 0 &amp;&amp; stem &apos;Bass&apos; 0 : eq_high 0.5 &amp;&amp; eq_low 0.5 &amp;&amp; stem &apos;Bass&apos; 0.5" />
+	<map value="ROW6_PAD2" action="var &apos;$sampleedit&apos; ? sampler_edit 42 : var &apos;$samplemute&apos; ? sampler_mute 42 : var &apos;$samplerec&apos; ? sampler_rec 42 : shift ? sampler_stop 42 : sampler_pad 42" />
+	<map value="ROW6_PAD3" action="var &apos;$sampleedit&apos; ? sampler_edit 43 : var &apos;$samplemute&apos; ? sampler_mute 43 : var &apos;$samplerec&apos; ? sampler_rec 43 : shift ? sampler_stop 43 : sampler_pad 43" />
+	<map value="ROW6_PAD4" action="var &apos;$sampleedit&apos; ? sampler_edit 44 : var &apos;$samplemute&apos; ? sampler_mute 44 : var &apos;$samplerec&apos; ? sampler_rec 44 : shift ? sampler_stop 44 : sampler_pad 44" />
+	<map value="ROW6_PAD6" action="pad_page  &apos;stems&apos; &amp;&amp; var_equal &apos;%mutestem&apos; 1 ? mute_stem &quot;Instru&quot; : only_stem &quot;Instru&quot;" />
+	<map value="ROW6_PAD7" action="pad_page  &apos;stems&apos; &amp;&amp; var_equal &apos;%mutestem&apos; 1 ? mute_stem &quot;Bass&quot; : only_stem &quot;Bass&quot;" />
+	<map value="ROW6_PAD8" action="pad_page  &apos;stems&apos; &amp;&amp; var_equal &apos;%mutestem&apos; 1 ? mute_stem &quot;Rhythm&quot; : only_stem &quot;Rhythm&quot;" />
+	<map value="LED_ROW6_PAD1" action="leftdeck ? var_equal &apos;$deckonekill&apos; 1 ? color &apos;red&apos; : color &apos;green&apos; : var_equal &apos;$decktwokill&apos; 1 ? color &apos;red&apos; : color &apos;green&apos;
+" />
+	<map value="LED_ROW6_PAD2" action="sampler_rec 42 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 42 ? sampler_mute 42 ? color &apos;red&apos; : sampler_pad 42 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW6_PAD3" action="sampler_rec 43 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 43 ? sampler_mute 43 ? color &apos;red&apos; : sampler_pad 43 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW6_PAD4" action="sampler_rec 44 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 44 ? sampler_mute 44 ? color &apos;red&apos; : sampler_pad 44 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW6_PAD5" action="var_equal &apos;%mutestem&apos; 1 ? mute_stem &quot;Vocal&quot; ? color &apos;red&apos;  :  only_stem &quot;Vocal&quot; ? color &quot;green&quot; :  color &quot;yellow&quot; : mute_stem &quot;Vocal&quot; ? color &apos;red&apos;  :  only_stem &quot;Vocal&quot; ? color &quot;green&quot; :  color &quot;yellow&quot;" />
+	<map value="LED_ROW6_PAD6" action="var_equal &apos;%mutestem&apos; 1 ? mute_stem &quot;Instru&quot; ? color &apos;red&apos;  :  only_stem &quot;Instru&quot; ? color &quot;green&quot; :  color &quot;yellow&quot; : mute_stem &quot;Instru&quot; ? color &apos;red&apos;  :  only_stem &quot;Instru&quot; ? color &quot;green&quot; :  color &quot;yellow&quot;" />
+	<map value="LED_ROW6_PAD7" action="var_equal &apos;%mutestem&apos; 1 ? mute_stem &quot;Bass&quot; ? color &apos;red&apos;  :  only_stem &quot;Bass&quot; ? color &quot;green&quot; :  color &quot;yellow&quot; : mute_stem &quot;Bass&quot; ? color &apos;red&apos;  :  only_stem &quot;Bass&quot; ? color &quot;green&quot; :  color &quot;yellow&quot;" />
+	<map value="LED_ROW6_PAD8" action="var_equal &apos;%mutestem&apos; 1 ? mute_stem &quot;Rhythm&quot; ? color &apos;red&apos;  :  only_stem &quot;Rhythm&quot; ? color &quot;green&quot; :  color &quot;yellow&quot; : mute_stem &quot;Rhythm&quot; ? color &apos;red&apos;  :  only_stem &quot;Rhythm&quot; ? color &quot;green&quot; :  color &quot;yellow&quot;" />
+	<map value="ROW7_PAD3" action="pad_page 3" />
+	<map value="ROW7_PAD4" action="var &apos;$sampleedit&apos; ? sampler_edit 52 : var &apos;$samplemute&apos; ? sampler_mute 52 : var &apos;$samplerec&apos; ? sampler_rec 52 : shift ? sampler_stop 52 : sampler_pad 52" />
+	<map value="ROW7_PAD5" action="var &apos;$sampleedit&apos; ? sampler_edit 53 : var &apos;$samplemute&apos; ? sampler_mute 53 : var &apos;$samplerec&apos; ? sampler_rec 53 : shift ? sampler_stop 53 : sampler_pad 53" />
+	<map value="ROW7_PAD6" action="var &apos;$sampleedit&apos; ? sampler_edit 54 : var &apos;$samplemute&apos; ? sampler_mute 54 : var &apos;$samplerec&apos; ? sampler_rec 54 : shift ? sampler_stop 54 : sampler_pad 54" />
+	<map value="ROW7_PAD7" action="var &apos;$sampleedit&apos; ? sampler_edit 55 : var &apos;$samplemute&apos; ? sampler_mute 55 : var &apos;$samplerec&apos; ? sampler_rec 55 : shift ? sampler_stop 55 : sampler_pad 55" />
+	<map value="ROW7_PAD8" action="var &apos;$sampleedit&apos; ? sampler_edit 56 : var &apos;$samplemute&apos; ? sampler_mute 56 : var &apos;$samplerec&apos; ? sampler_rec 56 : shift ? sampler_stop 56 : sampler_pad 56" />
+	<map value="LED_ROW7_PAD1" action="sampler_rec 49 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 49 ? sampler_mute 49 ? color &apos;red&apos; : sampler_pad 49 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW7_PAD2" action="sampler_rec 50 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 50 ? sampler_mute 50 ? color &apos;red&apos; : sampler_pad 50 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW7_PAD3" action="sampler_rec 51 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 51 ? sampler_mute 51 ? color &apos;red&apos; : sampler_pad 51 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW7_PAD4" action="sampler_rec 52 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 52 ? sampler_mute 52 ? color &apos;red&apos; : sampler_pad 52 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW7_PAD5" action="sampler_rec 53 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 53 ? sampler_mute 53 ? color &apos;red&apos; : sampler_pad 53 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW7_PAD6" action="sampler_rec 54 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 54 ? sampler_mute 54 ? color &apos;red&apos; : sampler_pad 54 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW7_PAD7" action="sampler_rec 55 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 55 ? sampler_mute 55 ? color &apos;red&apos; : sampler_pad 55 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW7_PAD8" action="sampler_rec 56 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 56 ? sampler_mute 56 ? color &apos;red&apos; : sampler_pad 56 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="ROW8_PAD1" action="deck 1 filter_selectcolorfx +1" />
+	<map value="ROW8_PAD3" action="var &apos;$sampleedit&apos; ? sampler_edit 59 : var &apos;$samplemute&apos; ? sampler_mute 59 : var &apos;$samplerec&apos; ? sampler_rec 59 : shift ? sampler_stop 59 : sampler_pad 59" />
+	<map value="ROW8_PAD4" action="var &apos;$sampleedit&apos; ? sampler_edit 60 : var &apos;$samplemute&apos; ? sampler_mute 60 : var &apos;$samplerec&apos; ? sampler_rec 60 : shift ? sampler_stop 60 : sampler_pad 60" />
+	<map value="ROW8_PAD5" action="var &apos;$sampleedit&apos; ? sampler_edit 61 : var &apos;$samplemute&apos; ? sampler_mute 61 : var &apos;$samplerec&apos; ? sampler_rec 61 : shift ? sampler_stop 61 : sampler_pad 61" />
+	<map value="ROW8_PAD6" action="var &apos;$sampleedit&apos; ? sampler_edit 62 : var &apos;$samplemute&apos; ? sampler_mute 62 : var &apos;$samplerec&apos; ? sampler_rec 62 : shift ? sampler_stop 62 : sampler_pad 62" />
+	<map value="ROW8_PAD7" action="var &apos;$sampleedit&apos; ? sampler_edit 63 : var &apos;$samplemute&apos; ? sampler_mute 63 : var &apos;$samplerec&apos; ? sampler_rec 63 : shift ? sampler_stop 63 : sampler_pad 63" />
+	<map value="ROW8_PAD8" action="skin_panel &amp; param_cast &apos;text&apos; &amp; debug" />
+	<map value="LED_ROW8_PAD1" action="sampler_rec 57 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 57 ? sampler_mute 57 ? color &apos;red&apos; : sampler_pad 57 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW8_PAD2" action="sampler_rec 58 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 58 ? sampler_mute 58 ? color &apos;red&apos; : sampler_pad 58 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW8_PAD3" action="sampler_rec 59 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 59 ? sampler_mute 59 ? color &apos;red&apos; : sampler_pad 59 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW8_PAD4" action="sampler_rec 60 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 60 ? sampler_mute 60 ? color &apos;red&apos; : sampler_pad 60 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW8_PAD5" action="sampler_rec 61 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 61 ? sampler_mute 61 ? color &apos;red&apos; : sampler_pad 61 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW8_PAD6" action="sampler_rec 62 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 62 ? sampler_mute 62 ? color &apos;red&apos; : sampler_pad 62 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW8_PAD7" action="sampler_rec 63 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 63 ? sampler_mute 63 ? color &apos;red&apos; : sampler_pad 63 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="LED_ROW8_PAD8" action="sampler_rec 64 ? blink 500ms ? color &apos;red&apos; : off : sampler_loaded 64 ? sampler_mute 64 ? color &apos;red&apos; : sampler_pad 64 ? color &apos;green&apos; : color &apos;yellow&apos; : off" />
+	<map value="SLIDER2" action="sampler_group_volume 2" />
+	<map value="SLIDER3" action="sampler_group_volume 3" />
+	<map value="SLIDER4" action="sampler_group_volume 4" />
+	<map value="SLIDER5" action="sampler_group_volume 5" />
+	<map value="SLIDER6" action="sampler_group_volume 6" />
+	<map value="SLIDER7" action="sampler_group_volume 7" />
+	<map value="SLIDER8" action="deck 1 volume" />
+	<map value="LEFT" action="sampler_mode -1" />
+	<map value="RIGHT" action="sampler_mode +1" />
+	<map value="UP" action="shift ? sampler_bank &apos;Recordings Bank&apos; : sampler_bank -1" />
+	<map value="DOWN" action="shift ? sampler_bank &apos;Recordings Bank&apos; : sampler_bank +1" />
+	<map value="REC_ARM" action="sampler_bank &apos;Recordings Bank&apos; &amp; set &apos;$samplerec&apos; 1 while_pressed" />
+	<map value="STOP_ALL_CLIPS" action="sampler all stop" />
+	<map value="LED_STOP_ALL_CLIPS" action="sampler_used" />
+	<map value="CLIP_STOP" action="var_equal &apos;$canswitch&apos; 1 ? var_equal &apos;$deckonekill&apos; 0 ? deck 1 eq_high 0 &amp;&amp; deck 1 eq_low 0 &amp;&amp; deck 1 stem &apos;Bass&apos; 0 &amp;&amp; deck 2 eq_high 0.5 &amp;&amp; deck 2 eq_low 0.5 &amp;&amp; deck 2 stem &apos;Bass&apos; 0.5 &amp;&amp; deck 1 eq_high 0 &amp;&amp; deck 1 eq_low 0 &amp;&amp; deck 1 stem &apos;Bass&apos; 0 &amp;&amp; set &apos;$deckonekill&apos;  1 &amp;&amp; set &apos;$decktwokill&apos;  0 : deck 2 eq_high 0 &amp;&amp; deck 2 eq_low 0 &amp;&amp; deck 2 stem &apos;Bass&apos; 0 &amp;&amp; deck 1 eq_high 0.5 &amp;&amp; deck 1 eq_low 0.5 &amp;&amp; deck 1 stem &apos;Bass&apos; 0.5 &amp;&amp; deck 2 eq_high 0 &amp;&amp; deck 2 eq_low 0 &amp;&amp; deck 2 stem &apos;Bass&apos; 0 &amp;&amp; set &apos;$deckonekill&apos;  0 &amp;&amp; set &apos;$decktwokill&apos; 1" />
+	<map value="MUTE" action="toggle &apos;%mutestem&apos;" />
+	<map value="ROW1_PAD1" action="loop 0.03125" />
+	<map value="ROW1_PAD3" action="loop 0.125" />
+	<map value="ROW8_PAD2" action="deck 1 skin_panel 1 &quot;echo&quot;" />
+	<map value="SLIDER1" action="deck 1 filter" />
+	<map value="SLIDER9" action="deck 2 volume" />
+	<map value="SELECT" action="false" />
+	<map value="LED_ROW1_PAD1" action="loop_back &apos;on&apos; ? loop 0.03125 ? blink 1000ms &amp;&amp; color &apos;green&apos; : color &apos;green&apos; : loop 0.03125 ? blink 1000ms &amp;&amp; color &apos;yellow&apos; : color &apos;yellow&apos;" />
+	<map value="BLANK1" action="loop ? loop &amp;&amp; loop_back : loop_back" />
+	<map value="LED_BLANK1" action="loop_back" />
+	<map value="ROW1_PAD4" action="loop 0.25" />
+	<map value="ROW1_PAD8" action="loop 4" />
+	<map value="ROW2_PAD3" action="loop 32" />
+	<map value="ROW2_PAD7" action="loop ? loop_half : nothing " />
+	<map value="ROW2_PAD8" action="loop ? loop_double : nothing " />
+	<map value="LED_ROW2_PAD4" action="loop_back &apos;on&apos; ? loop 64 ? blink 1000ms &amp;&amp; color &apos;green&apos; : color &apos;green&apos; : loop 64 ? blink 1000ms &amp;&amp; color &apos;yellow&apos; : color &apos;yellow&apos;" />
+	<map value="ROW4_PAD1" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move -4 : beatjump -4 : beatjump -4" />
+	<map value="ROW4_PAD7" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move -32 : beatjump -32 : beatjump -32" />
+	<map value="ROW5_PAD1" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move -64 : beatjump -64 : beatjump -64" />
+	<map value="ROW5_PAD2" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move +64  : beatjump +64 : beatjump +64" />
+	<map value="ROW5_PAD4" action="loop ? var_equal &apos;%moveloop&apos; 1 ? loop_move +128  : beatjump +128 : beatjump +128 " />
+	<map value="LED_CLIP_STOP" action="var_equal &apos;$deckonekill&apos; 1 ? var_equal &apos;$decktwokill&apos; 1 ? false : blink 1000ms : var_equal &apos;$decktwokill&apos; 1 ? blink  1000ms : false" />
+	<map value="ROW6_PAD5" action="pad_page  &apos;stems&apos; &amp;&amp; var_equal &apos;%mutestem&apos; 1 ? mute_stem &quot;Vocal&quot; : only_stem &quot;Vocal&quot;" />
+	<map value="SHIFT_ROW5_PAD6" action="seek  +0.1ms" />
+	<map value="SHIFT_ROW5_PAD7" action="seek  -1ms" />
+	<map value="SHIFT_ROW5_PAD8" action="seek +1ms" />
+	<map value="ROW7_PAD2" action="pad_page 2" />
+	<map value="SHIFT_ROW5_PAD5" action="seek -0.1ms" />
+	<map value="ROW7_PAD1" action="action_deck" />
+	<map value="BLANK2" action="toggle &apos;%moveloop&apos; : set &apos;%moveloop&apos; false" />
+</mapper>
